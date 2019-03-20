@@ -1,0 +1,9 @@
+insert into users (id, firstname, lastname) values (1, 'Jan', 'Nowak1');
+insert into users (id, firstname, lastname) values (2, 'Jan', 'Nowak2');
+insert into users (id, firstname, lastname) values (3, 'Jan', 'Nowak3');
+insert into users (id, firstname, lastname) values (4, 'Jan', 'Nowak4');
+insert into users (id, firstname, lastname) values (5, 'Jan', 'Nowak5');
+insert into users (id, firstname, lastname) values (6, 'Jan', 'Nowak6');
+insert into users (id, firstname, lastname) values (7, 'Jan', 'Nowak7');
+insert into users (id, firstname, lastname) values (8, 'Jan', 'Nowak8');
+insert into users (id, firstname, lastname) values (9, 'Jan', 'Nowak9');
