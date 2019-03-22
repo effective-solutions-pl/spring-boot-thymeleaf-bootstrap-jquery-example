@@ -6,7 +6,34 @@
 </head>
 <body>
 <section layout:fragment="content">
-
+    <div class="panel panel-default">
+        <div class="panel-heading">Użytkownicy</div>
+        <div class="panel-body">
+            <table id="users" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                <tr>
+                    <th scope="col">First name</th>
+                    <th scope="col">Last name</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
 </section>
+<footer>
+    <p layout:fragment="custom-footer">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#users').DataTable({
+                    "ajax": "http://localhost:8080/users/all",
+                    "columns": [
+                        {"data": "firstName"},
+                        {"data": "lastName"}
+                    ]
+                });
+            });
+        </script>
+    </p>
+</footer>
 </body>
 </html>

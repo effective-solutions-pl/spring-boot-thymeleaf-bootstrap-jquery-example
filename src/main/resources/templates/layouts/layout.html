@@ -4,7 +4,13 @@
     <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}" rel="stylesheet" media="screen" />
-    <link href="/css/dashboard.css" rel="stylesheet">
+    <link href="/css/dashboard.css" rel="stylesheet" />
+    <link href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css" />
+    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" />
+
+
 </head>
 <body>
 
@@ -49,12 +55,17 @@
                 </ul>
             </div>
         </nav>
-
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom" />
-
+            <section layout:fragment="content" />
         </main>
     </div>
 </div>
+<footer>
+    <script th:src="@{/webjars/jquery/3.3.1/jquery.min.js}" ></script>
+    <script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}" ></script>
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <p layout:fragment="custom-footer">Custom footer here</p>
+</footer>
 </body>
 </html>
